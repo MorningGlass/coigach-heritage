@@ -1,0 +1,29 @@
+.custom-navbar {
+    margin-top: 100px;
+    background-color: lightgray;
+    background-color: transparent !important
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: darkslategrey;
+    margin-left: 30px
+}
+
+.navbar-nav .nav-link:hover {
+    color: white; /* Change text color */
+    background-color: darkslategrey; /* Optional: Light background */
+    border-radius: 5px; /* Rounded edges */
+    transition: 0.3s ease-in-out; /* Smooth effect */
+}
+
+h5 {
+    color: darkgray;
+    padding-top: 40px;
+}
+
+.container-fluid {
+    padding-left: 50px;
+    padding-right: 50px;
+}
