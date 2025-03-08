@@ -1,5 +1,7 @@
-body {
-    color: #333; /* Dark gray, change to any color */
+
+p {
+    color: darkslategrey;
+    padding-top: 20px;
 }
 
 
