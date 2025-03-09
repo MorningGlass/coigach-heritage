@@ -30,9 +30,40 @@ h5 {
     padding-top: 40px;
 }
 
-.container-fluid {
-    padding-left: 50px;
-    padding-right: 50px;
+/* Ensure the image container is positioned relative */
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Card overlay positioning */
+.overlay-card {
+    position: absolute;
+    top: 50%;
+    right: 5%;  /* Moves card to the right */
+    transform: translateY(-50%); /* Centers the card vertically */
+    width: 600px; /* Adjust width */
+}
+
+/* Style the card for readability */
+.card {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive: Move card below image on small screens */
+@media (max-width: 768px) {
+    .overlay-card {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+    }
 }
 
 
