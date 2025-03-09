@@ -1,18 +1,19 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid custom-navbar">
-  <div class="container">
+<nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
+  <div class="container-fluid"> <!-- Use container-fluid for full width -->
     <!-- Logo on the left -->
     <a class="navbar-brand" href="index.html">
       <img src="logo_semi.png" alt="Logo" width="400" class="img-fluid">
     </a>
 
     <!-- Navbar toggler (for mobile menu) -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Menu items aligned to the right -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+    <!-- Navbar items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="map_display.html">Map</a>
         </li>
