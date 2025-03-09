@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_c2b29d3dedd1ad77142cac2a4c405d39 {
+                #map_1dfe03c90821808b5f7bf551f21693f9 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,20 +39,21 @@
 <body>
     
     
-            <div class="folium-map" id="map_c2b29d3dedd1ad77142cac2a4c405d39" ></div>
+            <div class="folium-map" id="map_1dfe03c90821808b5f7bf551f21693f9" ></div>
         
 </body>
 <script>
     
     
-            var map_c2b29d3dedd1ad77142cac2a4c405d39 = L.map(
-                "map_c2b29d3dedd1ad77142cac2a4c405d39",
+            var map_1dfe03c90821808b5f7bf551f21693f9 = L.map(
+                "map_1dfe03c90821808b5f7bf551f21693f9",
                 {
                     center: [58.009167, -5.345556],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: true,
                     preferCanvas: false,
+                    name: "OpenStreetMap",
                 }
             );
 
@@ -60,37 +61,62 @@
 
         
     
-            var tile_layer_3110aae77d51f296d162f8a194a5b644 = L.tileLayer(
+            var tile_layer_46f1f68a5cb2f288d00000e877e3db42 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_3110aae77d51f296d162f8a194a5b644.addTo(map_c2b29d3dedd1ad77142cac2a4c405d39);
+            tile_layer_46f1f68a5cb2f288d00000e877e3db42.addTo(map_1dfe03c90821808b5f7bf551f21693f9);
         
     
-            var marker_d35981e6dfa064ac7380b48708b137a3 = L.marker(
+            var tile_layer_e3ba77f0863a9207c54510f07829748d = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google Satellite", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e3ba77f0863a9207c54510f07829748d.addTo(map_1dfe03c90821808b5f7bf551f21693f9);
+        
+    
+            var layer_control_a7f476ee3d4b1946833b01da71d0a61b_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_46f1f68a5cb2f288d00000e877e3db42,
+                    "Google Satellite" : tile_layer_e3ba77f0863a9207c54510f07829748d,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_a7f476ee3d4b1946833b01da71d0a61b = L.control.layers(
+                layer_control_a7f476ee3d4b1946833b01da71d0a61b_layers.base_layers,
+                layer_control_a7f476ee3d4b1946833b01da71d0a61b_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_1dfe03c90821808b5f7bf551f21693f9);
+
+        
+    
+            var marker_c77f8260a9954bc2330cea2bd645ae97 = L.marker(
                 [58.009167, -5.345556],
                 {}
-            ).addTo(map_c2b29d3dedd1ad77142cac2a4c405d39);
+            ).addTo(map_1dfe03c90821808b5f7bf551f21693f9);
         
     
-        var popup_bbc30fbcadf5ebeb556886c76417c5d1 = L.popup({"maxWidth": 400});
+        var popup_886e3eb7a9889512b3fde6402a875d85 = L.popup({"maxWidth": 400});
 
         
             
-                var html_32fed7a7de23739452ff1e0bebcbda82 = $(`<div id="html_32fed7a7de23739452ff1e0bebcbda82" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Helvetica, sans-serif;         font-size: 14px;         color: black;         padding: 10px;         text-align: left;         background-color: #F7F8FA;         max-width: 90vw; /* Make popup width responsive */         word-wrap: break-word;      ">         <h4 style="font-size: 18px; margin: 5px 0; color: black;">Ruin past the White House on the Rubha Dunan peninsula.</h4>         <p><b>OS Grid Ref:</b> NC 02440 07127</p>         <p><b>Location: </b>58°0'33"N, 5°20'44"W</p>         <p><b>Date photographed</b>: 23/04/2024</p>         <p><b>Altitude:</b> 19m</p>         <img src="https://github.com/MorningGlass/morningglass.github.io/blob/main/data/_DSC5391.jpeg?raw=true" alt="Image of Ruin past the White House on the Rubha Dunan peninsula." style="width: 90%; height: auto; border-radius: 5px;">     </div>     </div>`)[0];
-                popup_bbc30fbcadf5ebeb556886c76417c5d1.setContent(html_32fed7a7de23739452ff1e0bebcbda82);
+                var html_532f838e7104477db646a39b47b08925 = $(`<div id="html_532f838e7104477db646a39b47b08925" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Helvetica, sans-serif;         font-size: 14px;         color: black;         padding: 10px;         text-align: left;         background-color: #F7F8FA;         max-width: 90vw; /* Make popup width responsive */         word-wrap: break-word;      ">         <h4 style="font-size: 18px; margin: 5px 0; color: black;">Ruin past the White House on the Rubha Dunan peninsula.</h4>         <p><b>OS Grid Ref:</b> NC 02440 07127</p>         <p><b>Location: </b>58°0'33"N, 5°20'44"W</p>         <p><b>Date photographed</b>: 23/04/2024</p>         <p><b>Altitude:</b> 19m</p>         <img src="https://github.com/MorningGlass/morningglass.github.io/blob/main/data/_DSC5391.jpeg?raw=true" alt="Image of Ruin past the White House on the Rubha Dunan peninsula." style="width: 100%; height: auto; border-radius: 5px;">     </div>     </div>`)[0];
+                popup_886e3eb7a9889512b3fde6402a875d85.setContent(html_532f838e7104477db646a39b47b08925);
             
         
 
-        marker_d35981e6dfa064ac7380b48708b137a3.bindPopup(popup_bbc30fbcadf5ebeb556886c76417c5d1)
+        marker_c77f8260a9954bc2330cea2bd645ae97.bindPopup(popup_886e3eb7a9889512b3fde6402a875d85)
         ;
 
         
     
     
-            marker_d35981e6dfa064ac7380b48708b137a3.bindTooltip(
+            marker_c77f8260a9954bc2330cea2bd645ae97.bindTooltip(
                 `<div>
                      Ruin past the White House on the Rubha Dunan peninsula.
                  </div>`,
