@@ -5,7 +5,7 @@ p {
 }
 
 .custom-navbar {
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 40px;
     background-color: transparent !important
 }
@@ -33,7 +33,7 @@ p {
 /* Card overlay positioning */
 .overlay-card {
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 10%;  /* Moves card to the right */
     transform: translateY(-50%); /* Centers the card vertically */
     width: 500px; /* Adjust width */
@@ -41,7 +41,7 @@ p {
 
 /* Style the card for readability */
 .card {
-    background: whitesmoke;
+    background: rgba(255, 255, 255, 1.0);
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
