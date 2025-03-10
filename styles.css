@@ -64,17 +64,18 @@ p {
 
 @media (max-width: 900px) { /* Adjust for tablets and smaller screens */
     .text-container {
-        width: 80%; /* Reduce width */
-        padding: 1rem; /* Reduce padding */
-        font-size: 0.9rem; /* Smaller text */
-        top: 50%; /* Move it up */
-        left: 50%;
-        transform: translate(-50%, -50%); /* Perfect center */
-        text-align: center;
-        max-height: 60%; /* Reduce height */
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* Ensures button is inside */
+        width: 80% !important; /* Reduce width */
+        padding: 1rem !important; /* Reduce padding */
+        font-size: 0.9rem !important; /* Smaller text */
+        position: absolute !important;
+        top: 50% !important; /* Move it up */
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important; /* Perfect center */
+        text-align: center !important;
+        max-height: 60% !important; /* Reduce height */
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important; /* Ensures button is inside */
     }
 
     .text-container h2 {
