@@ -9,7 +9,6 @@
 </head>
 <body>
 
-
 <div id="navbar"></div>
 <script>
     fetch('navbar.html')
@@ -17,27 +16,24 @@
         .then(html => document.getElementById('navbar').innerHTML = html);
 </script>
 
+<div class="container-fluid position-relative">
+    <!-- Image Container -->
+    <div class="image-container">
+        <img src="index_bg3.jpeg" alt="bg_image" class="img-fluid w-100 d-block">
+        <div class="overlay"></div> <!-- Dark Overlay -->
+    </div>
 
-<!-- Image container with positioned card -->
-<div class="container-fluid"
-<div class="image-container">
-    <img src="index_bg3.jpeg" alt="bg_image" class="img-fluid w-100 d-block">
-    <div class="overlay-card">
-        <div class="card">
-            <div class="card-body">
-                <h3 class="card-title">Mapping Coigach's ruined buildings</h3>
-                <p class="card-text">A combination of historical depopulation, the nature of traditional housing,
-                    and the challenges of remote rural living have resulted in a large number of ruined buildings
-                    throughout the NW Highlands.
-                </p>
-                <p>
-                    This project aims to document the ruins of the Coigach peninsula through photographs
-                    and an interactive map.
-                </p>
-                <br>
-                <div class="text-center">
-                    <a href="map_display.html" class="btn btn-outline-secondary">View the Map</a>
-                </div>
+    <!-- Text Overlay -->
+    <div class="row position-absolute top-50 start-50 translate-middle-x text-white text-container">
+        <!-- Left Column (Empty) -->
+        <div class="col-md-6"></div>
+
+        <!-- Right Column (Text) -->
+        <div class="col-md-6 text-start">
+            <h2>Mapping Coigach's Ruined Buildings</h2>
+            <h5>Documenting the abandoned buildings of the Coigach peninsula through photographs.</h5>
+            <div class="text-center">
+                <a href="map_display.html" class="btn btn-outline-light">View Map</a>
             </div>
         </div>
     </div>
