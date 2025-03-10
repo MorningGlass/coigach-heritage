@@ -65,10 +65,13 @@ p {
 
 @media (max-width: 768px) { /* Adjust for tablets and smaller screens */
     .text-container {
-        top: 60%; /* Move it slightly lower */
-        width: 80%; /* Reduce width */
+        width: 75%; /* Reduce width */
         padding: 1rem; /* Reduce padding */
         font-size: 0.9rem; /* Reduce text size */
+        top: 30%; /* Move to center */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Perfect centering */
+        text-align: center; /* Center text */
     }
 
     .text-container h2 {
