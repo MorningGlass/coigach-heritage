@@ -62,3 +62,35 @@ p {
     background-color: white;
     color: black;
 }
+
+@media (max-width: 768px) { /* Adjust for tablets and smaller screens */
+    .text-container {
+        top: 60%; /* Move it slightly lower */
+        width: 80%; /* Reduce width */
+        padding: 1rem; /* Reduce padding */
+        font-size: 0.9rem; /* Reduce text size */
+    }
+
+    .text-container h2 {
+        font-size: 1.2rem; /* Reduce heading size */
+    }
+
+    .text-container H5 {
+        font-size: 1.0rem;
+        color: white;
+        padding-top: 10px;
+    }
+
+    .btn-outline-light {
+        border-width: 2px;  /* Make the border slightly thicker */
+        margin-top: 20px;
+        font-size: 1rem;  /* Slightly larger text */
+        padding: 10px 20px; /* Adjust padding */
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-outline-light:hover {
+        background-color: white;
+        color: black;
+    }
+}
