@@ -69,7 +69,7 @@ p {
         font-size: 0.9rem !important; /* Smaller text */
         position: absolute !important;
         top: 50% !important; /* Move it up */
-        left: auto !important;
+        left: 50% !important; /* Center it horizontally */
         transform: translate(-50%, -50%) !important; /* Perfect center */
         text-align: center !important;
         max-height: 60% !important; /* Reduce height */
