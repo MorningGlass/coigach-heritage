@@ -42,7 +42,6 @@ p {
 .text-container {
     width: 90%;
     margin: auto;
-    background-color: ;
 }
 
 .text-container H5 {
@@ -63,15 +62,19 @@ p {
     color: black;
 }
 
-@media (max-width: 768px) { /* Adjust for tablets and smaller screens */
+@media (max-width: 900px) { /* Adjust for tablets and smaller screens */
     .text-container {
-        width: 75%; /* Reduce width */
+        width: 80%; /* Reduce width */
         padding: 1rem; /* Reduce padding */
-        font-size: 0.9rem; /* Reduce text size */
-        top: 30%; /* Move to center */
-        left: 50%; /* Center horizontally */
-        transform: translate(-50%, -50%); /* Perfect centering */
-        text-align: center; /* Center text */
+        font-size: 0.9rem; /* Smaller text */
+        top: 50%; /* Move it up */
+        left: 50%;
+        transform: translate(-50%, -50%); /* Perfect center */
+        text-align: center;
+        max-height: 60%; /* Reduce height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Ensures button is inside */
     }
 
     .text-container h2 {
@@ -90,6 +93,7 @@ p {
         font-size: 1rem;  /* Slightly larger text */
         padding: 10px 20px; /* Adjust padding */
         transition: all 0.3s ease-in-out;
+        align-self: center;
     }
 
     .btn-outline-light:hover {
