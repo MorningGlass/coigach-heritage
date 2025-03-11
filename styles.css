@@ -109,7 +109,7 @@ p {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .text-container {
         width: 90%; /* Further expands text width */
         right: 5%; /* Adjusts for very small screens */
