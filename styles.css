@@ -95,15 +95,15 @@ p {
     }
 
     .text-container h1 {
-        font-size: 1.2rem;
+        font-size: 1.1 rem;
     }
 
     .text-container h5 {
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 
     .btn-outline-light {
-        font-size: 1rem;
+        font-size: 0.8rem;
         padding: 8px 15px;
     }
 }
