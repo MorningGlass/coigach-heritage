@@ -86,6 +86,7 @@ p {
     border-color: black;
 }
 
+
 @media (max-width: 900px) {
     .text-container {
         width: 80%; /* Expands text width on smaller screens */
