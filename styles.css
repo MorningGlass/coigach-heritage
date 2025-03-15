@@ -111,12 +111,12 @@ p {
     }
 
     .text-container h1 {
-        font-size: 1.2rem;
+        font-size: 2rem;
         padding-top: 20px;
     }
 
     .text-container h5 {
-        font-size: 0.75rem;
+        font-size: 1.2 rem;
     }
 
     .btn-outline-light {
