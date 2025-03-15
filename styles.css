@@ -1,8 +1,10 @@
+/* General Text Styling */
 p {
     color: darkslategrey;
     padding-top: 20px;
 }
 
+/* Navbar Styling */
 .custom-navbar {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -24,9 +26,18 @@ p {
     transition: 0.3s ease-in-out;
 }
 
+/* Image Container & Overlay */
 .image-container {
     position: relative;
     width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh; /* Ensures it doesn't take up too much space */
+    object-fit: cover;
+    border-radius: 25px;
 }
 
 .overlay {
@@ -36,18 +47,18 @@ p {
     width: 100%;
     height: 100%;
     background: rgba(112, 66, 20, 0.40); /* sepia */
-    border-radius: 10px
+    border-radius: 10px;
 }
 
+/* Text Overlay */
 .text-container {
     position: absolute;
-    top: 50%; /* Centers vertically */
-    right: 5%; /* Positions text on the right */
-    width: 50%; /* Ensures text doesn’t take too much space */
-    transform: translateY(-50%); /* Adjusts for perfect centering */
+    top: 50%;
+    right: 5%;
+    width: 50%;
+    transform: translateY(-50%);
     color: white;
     text-align: left;
-    /* background-color: rgba(255, 255, 255, 0.65); */
     border-radius: 15px;
     padding: 20px;
 }
@@ -57,7 +68,9 @@ p {
     margin-top: 30px;
 }
 
-.btn-outline-light {
+/* Buttons */
+.btn-outline-light,
+.btn-light {
     border-width: 2px;
     font-size: 1.2rem;
     padding: 8px 15px;
@@ -67,11 +80,6 @@ p {
 }
 
 .btn-light {
-    border-width: 2px;
-    font-size: 1.2rem;
-    padding: 8px 15px;
-    transition: all 0.3s ease-in-out;
-    margin-top: 30px;
     border-radius: 5px;
 }
 
@@ -86,12 +94,19 @@ p {
     border-color: black;
 }
 
-
+/* 📱 Mobile Styles */
 @media (max-width: 900px) {
+    /* Make image fill screen height */
+    .image-container img {
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    /* Adjust text container on small screens */
     .text-container {
-        width: 80%; /* Expands text width on smaller screens */
-        right: 10%; /* Keeps spacing from the right edge */
-        top: 50%; /* Adjust for better centering on smaller screens */
+        width: 90%;
+        right: 5%;
+        top: 50%;
         transform: translateY(-50%);
     }
 
@@ -109,13 +124,3 @@ p {
         padding: 8px 15px;
     }
 }
-
-@media (max-width: 900px) {
-    .text-container {
-        width: 90%; /* Further expands text width */
-        right: 5%; /* Adjusts for very small screens */
-        top: auto; /* Prevents text from going below the image */
-        bottom: 10%; /* Places text at a safe position above image bottom */
-        transform: none; /* Removes translate to avoid weird positioning */
-    }
-}  
